@@ -31,7 +31,12 @@ Planned argument types:
 * int - only accepts a integers, supports min and max argument criteria. Example `<int[min:0,max:64]:items>`
 * float - only accepts floats, supports min and max argument criteria.
 
-The criteria is where the required scoreboard team, tags and oplevel can be defined. If a value is left blank it will be considered not required when the command is run.
+Criteria is where the requirements for the command to succeed are put. If criteria are not defined the player will not have to have any requirements to continue.
+
+Planned critera:
+* oplevel
+* team
+* tags
 
 The results area is where you define the functions/scripts/other that are run based off various conditions and arguments above:
 
@@ -59,7 +64,7 @@ General Example Json:
     "argbuilder":"<bool:arg1><entity:arg2><int:arg3>",
     "criteria":{
       "team":"teamName",
-      "tags":"aRandomTag",
+      "tags":"aRandomTag, anotherTag",
       "oplevel":1
     },
     "result":{
