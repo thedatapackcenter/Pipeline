@@ -33,16 +33,18 @@ Planned argument types:
 
 The criteria is where the required scoreboard team, tags and oplevel can be defined. If a value is left blank it will be considered not required when the command is run.
 
-The results area is where you define the functions that are run based off various conditions and arguments above:
-
-**success**: Conditional, runs if all criteria are met and all arguments (if any were used) are entered correctly.
-*Any arguments set above will be inserted into functions in place of `<_"argName"_>`, it is up to the creator of the command to correctly insert the arguments in functions.*
+The results area is where you define the functions/scripts/other that are run based off various conditions and arguments above:
 
 **definite** Unconditional, runs every single time the command is run.
 
-**incorrectargs**: Conditional, runs if all criteria are met, but any argument (if any were used) has been entered incorrectly.
+-------------------------------------------------------------------------------
 
 **failed**: Conditonal, runs if any criteria were not met.
+
+**incorrectargs**: Conditional, runs if all criteria are met, but any argument (if any were used) has been entered incorrectly.
+
+**success**: Conditional, runs if all criteria are met and all arguments (if any were used) are entered correctly.
+*Any arguments set above will be inserted into functions/scripts/other in place of `<_"argName"_>`, it is up to the creator of the command to correctly insert the arguments in functions etc.*
 
 *Any command has to have a "success" or "definite" function result defined. The "failed" and "incorrectargs" are optional but recommeneded for commands that don't use "definite" result. All functions executed are run from the perspective of the command sender wether that be a player, an entity or the console.
 
