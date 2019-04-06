@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.datapackcenter.pipeline'
+version '0.1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
