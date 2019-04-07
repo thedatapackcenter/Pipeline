@@ -84,24 +84,6 @@ General Example Json:
   }
 }
 ```
-Here is an example command Json for a tpa command: It only has a "success" and "incorrectargs" result because I've completely removed the criteria so this command can't get the "failed" result. 
-```json
-{
-  "command":{
-    "name":"tpa",
-    "description":"Teleport to a friend",
-    "argbuilder":"<pentity:arg1>",
-    "criteria":{},
-    "result":{
-      "success":{
-        "function":"tpaplugin:sendTpaRequest"
-      },
-     "incorrectargs":{
-        "function":"tpaplugin:correctCommandUsage"
-      }
-    }
-  }
-}```
 
 # Pipeline Event System
 All pipeline events are stored as jsons. They are stored in `DATAPACK/data/custom/pipeline/events/`
